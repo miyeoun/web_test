@@ -29,7 +29,7 @@ padding-left:25px;
 }
 @media(width-max:800){
 #grid {
-dispaly:block;
+display:block;
 }
 ol{
 border-right:none;
