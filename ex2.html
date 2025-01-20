@@ -7,17 +7,15 @@
 </head>
   <body>
     <p>hello, nice to meet you.</p>
-    <input type="button" value="hi" onclick="alert('happy day')">
-    <input type="text" onchange="alert('changed')">
-    <input type="text" onkeydown="alert('keydown!')">
-    <input type="button" value="night" onclick="
-      document.querySelector('body').style.backgroundColor='black';
-      document.querySelector('body').style.color='white';
-      ">
-    <input type="button" value="day" onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
-      ">
-    
-  </body
+   <input type="button" value="Toggle Theme" onclick="
+  let body = document.querySelector('body');
+  if (body.style.backgroundColor === 'black') {
+    body.style.backgroundColor = 'white';
+    body.style.color = 'black';
+  } else {
+    body.style.backgroundColor = 'black';
+    body.style.color = 'white';
+  }
+">    
+  </body>
 </html>
