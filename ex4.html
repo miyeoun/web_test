@@ -1,0 +1,18 @@
+<input type="button" id="themeToggle" value="Toggle Theme" onclick="
+  let body = document.querySelector('body');
+  let button = document.getElementById('themeToggle');
+  
+  if (body.style.backgroundColor === 'black') {
+    body.style.backgroundColor = 'white';
+    body.style.color = 'black';
+    button.style.backgroundColor = 'black';
+    button.style.color = 'white';
+    button.value = 'Switch to Dark Mode';
+  } else {
+    body.style.backgroundColor = 'black';
+    body.style.color = 'white';
+    button.style.backgroundColor = 'white';
+    button.style.color = 'black';
+    button.value = 'Switch to Light Mode';
+  }
+">
