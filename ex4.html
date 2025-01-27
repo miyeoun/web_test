@@ -6,7 +6,7 @@
 </head>
 <body>
 <p>Hellow world. Nice to meet you.</p>
-<input type="button" id="themeToggle" value="Toggle Theme" onclick="
+<input type="button" id="themeToggle" value="Black Mode" onclick="
   let body = document.querySelector('body');
   let button = document.getElementById('themeToggle');
   
@@ -15,13 +15,13 @@
     body.style.color = 'black';
     button.style.backgroundColor = 'black';
     button.style.color = 'white';
-    button.value = 'Switch to Dark Mode';
+    button.value = 'Black Mode';
   } else {
     body.style.backgroundColor = 'black';
     body.style.color = 'white';
     button.style.backgroundColor = 'white';
     button.style.color = 'black';
-    button.value = 'Switch to Light Mode';
+    button.value = 'White Mode';
   }
 ">
   </body>
