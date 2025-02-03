@@ -6,13 +6,13 @@
 </head>
 <body>
 <input id="night_day" type="button" value="Night" onclick="
-  if (document.querySelector('#night_day').value==='Night') {
+  if(document.querySelector('#night_day').value==='Night') {
     document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body')style.color = 'white';
-    document.querySelector('#night_day').value='Day';  } 
-  else {
-   document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body')style.color = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night_day').value='Day'; 
+     } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color = 'black';
     document.querySelector('#night_day').value='Night';
   }
 ">
