@@ -19,13 +19,14 @@
 ">
   <p>JavaScript is a programming language that developers use to make interactive webpages. From refreshing social media feeds to displaying animations and interactive maps, JavaScript functions can improve a website's user experience. As a client-side scripting language, it is one of the core technologies of the World Wide Web. For example, when browsing the internet, anytime you see an image carousel, a click-to-show dropdown menu, or dynamically changing element colors on a webpage, you see the effects of JavaScript.</p>
 <input id="night_day2" type="button" value="Night" onclick="
+  var target=document.querySelector('body');
   if (this.value==='Night') {
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color = 'white';
+    target.style.backgroundColor='black';
+    target.style.color = 'white';
     this.value='Day'; 
      } else {
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color = 'black';
+    target.style.backgroundColor='white';
+    target.style.color = 'black';
     this.value='Night';
   }
 "> 
