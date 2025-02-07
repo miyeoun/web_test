@@ -1,0 +1,20 @@
+<html>
+<head>       
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<input type="button" value="백일법문" onclick="
+    var menu = ['불교대학', '경전강의', '불교사회대학', '수행법회', '1080배 정진', '명상'];
+    var menuList = document.getElementById('menuList');
+    var i = 0;
+    while (i < menu.length) {
+        var li = document.createElement('li');
+        li.textContent = menu[i];
+        menuList.appendChild(li);
+        i=i+1;
+    }
+">
+<ul id="menuList"></ul>
+</body>
+</html>
