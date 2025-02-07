@@ -4,8 +4,20 @@
 <meta charset="utf-8">
 <title></title>  
 </head>
-<body>
-  
+<body> 
+<h1>WEB</h1> 
+<input type="button" value="Night" onclick="
+  var target=document.querySelector('body');
+  if (this.value==='Night') {
+    target.style.backgroundColor='black';
+    target.style.color = 'white';
+    this.value='Day'; 
+     } else {
+    target.style.backgroundColor='white';
+    target.style.color = 'black';
+    this.value='Night';
+  }
+">  
 <ol>
   <li><a href="1.html">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
