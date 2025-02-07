@@ -64,9 +64,9 @@
                 var listItem = document.createElement("li"); // <li> 요소 생성
                 listItem.textContent = menuItems[i]; // 텍스트 추가
                 menuList.appendChild(listItem); // <ul> 안에 <li> 추가
-                i++;
+                i=i+1;
             }
-
+            
             // 리스트 보이기
             listContainer.style.display = "block";
         });
