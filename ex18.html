@@ -3,15 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title></title>  
-</head>
-<body> 
-<h1><a href="index.html">WEB</a></h1> 
-<input type="button" value="Night" onclick="
-  var target=document.querySelector('body');
-  if (this.value==='Night') {
+<script>
+function nightDayHandler(self){ 
+var target=document.querySelector('body');
+  if (self.value==='Night') {
     target.style.backgroundColor='black';
     target.style.color = 'white';
-    this.value='Day'; 
+    self.value='Day'; 
     var alist=document.querySelectorAll('a');
     var i=0;
     while(i<alist.length){
@@ -21,14 +19,21 @@
      } else {
     target.style.backgroundColor='white';
     target.style.color = 'black';
-    this.value='Night';
+    self.value='Night';
     var alist=document.querySelectorAll('a');
     var i=0;
     while(i<alist.length){
     alist[i].style.color='blue';  
     i=i+1;
        }
-  }
+     }
+  } 
+</script>  
+</head>
+<body> 
+<h1><a href="index.html">WEB</a></h1> 
+<input type="button" value="Night" onclick="
+  nightDayHandler(this);
 ">  
 <ol>
 <li><style="color:red">Buddha Dharma</li>
