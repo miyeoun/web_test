@@ -8,13 +8,15 @@
 <h2>Create</h2>
 <script>
 var coworkers={
-  "programmer: Kim";
-  "designer: Lee"; 
-}
+  "programmer": "Kim",
+  "designer": "Lee"
+};
 document.write("Programmer:"+coworkers.programmer+"<br>");  
 document.write("Designer:"+coworkers.programmer+"<br>");  
-coworkers.bookkeeper:Park;  
-  
+coworkers.bookkeeper="Park"; 
+document.write("Bookkeeper:"+coworker.bookkeeper+"<br>");  
+coworkers["data scientist"]="Choi";  
+document.write("Data Scientist:"+coworker["data scientist"]+"<br>");    
 </script>  
   
 
