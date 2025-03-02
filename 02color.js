@@ -6,6 +6,7 @@ function LinksSetColor(color){
       i = i + 1;
     }
   }
+}
   function BodySetColor(color){
     document.querySelector('body').style.color = color;
   }
