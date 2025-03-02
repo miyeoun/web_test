@@ -6,7 +6,7 @@ var Links = {
       alist[i].style.color = color;
       i = i + 1;
     }
-    
+  }
 }
 var Body = {
   setColor:function (color){
