@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<title> Jungto Dharma School</title>
-<meta charset="utf-8">
-<style>
- a {
-   color:green;
-   font-size:150%;
- }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자 맞추기 게임</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<h1>Dharma School</h1>
-<img src="https://forum.jungtosociety.org/wp-content/uploads/2024/12/Copy-of-뉴스레터-홍보-영상.gif" width="1020px">
-<ol>
-<li><a href="1.html">Buddha Dharma</a></li>
-<li><a href="2.html">Life of the Buddha</a></li>
-<li><a href="3.html">근본불교</a></li>
-<li><a href="4.html">인간붓다</a></li>
-</ol>
-
-<p style="font-size:150%;">Learn the original teachings of the Buddha under the guidance of Ven. Pomnyun Sunim (법륜스님).
- </p>
-<p style="font-size:150%;">You will learn how the mind works and experience changes in your perspective on life.<br>
-    As the students of Jungto Dharma School, you will not only study Buddhist doctrines<br>
-     (the Buddha’s core teachings) but also gain practical wisdom that helps you resolve <br>
-     various problems in your lives. Additionally, you will practice <br>
-    applying the teachings to your daily lives.</p>
+  <div class="container">
+    <h1>숫자 맞추기 게임</h1>
+    <p>1부터 100 사이의 숫자를 맞춰보세요!</p>
+    <input type="number" id="guessInput" placeholder="숫자를 입력하세요">
+    <button id="guessButton">확인</button>
+    <p id="hint"></p>
+    <p>시도 횟수: <span id="attempts">0</span></p>
+    <button id="restartButton">다시 시작</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-
