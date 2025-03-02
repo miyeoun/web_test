@@ -7,7 +7,7 @@ var target=document.querySelector('body');
     var alist=document.querySelectorAll('a');
     var i=0;
     while(i<alist.length){
-    alist[i].style.color='yellow';  
+    alist[i].style.color='white';  
     i=i+1;
        }
      } else {
