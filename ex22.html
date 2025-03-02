@@ -3,14 +3,41 @@
 <head>
 <meta charset="utf-8">
 <title></title>  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>"
-<script src="color.js"></script>  
+<script>
+function nightDayHandler(self){ 
+var target=document.querySelector('body');
+  if (self.value==='Night') {
+    target.style.backgroundColor='black';
+    target.style.color = 'white';
+    self.value='Day'; 
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+    alist[i].style.color='powderblue';  
+    i=i+1;
+       }
+     } else {
+    target.style.backgroundColor='white';
+    target.style.color = 'black';
+    self.value='Night';
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+    alist[i].style.color='blue';  
+    i=i+1;
+       }
+     }
+  } 
+</script>  
 </head>
 <body> 
 <h1><a href="index.html">WEB</a></h1> 
 <input type="button" value="Night" onclick="
   nightDayHandler(this);
-">  
+"> 
+<input type="button" value="Night" onclick="
+  nightDayHandler(this);
+">    
 <ol>
 <li><style="color:red">Buddha Dharma</li>
 <li><a href="2.html">Life of the Buddha</a></li>
